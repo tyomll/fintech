@@ -1,5 +1,5 @@
 "use client";
-import { Card, CardContent, CardHeader } from "@/shared/@core/ui/card";
+import { Card, CardContent, CardHeader } from "@/shared/ui/@core/card";
 import { TrendingUp, TrendingDown } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { StockTrend } from "@/features/landing/lib/types";

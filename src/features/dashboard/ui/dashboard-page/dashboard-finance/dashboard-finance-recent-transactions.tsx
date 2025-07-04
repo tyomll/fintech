@@ -4,7 +4,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/shared/@core/ui/card";
+} from "@/shared/ui/@core/card";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import { TransactionType } from "@/features/dashboard/lib/types";
 

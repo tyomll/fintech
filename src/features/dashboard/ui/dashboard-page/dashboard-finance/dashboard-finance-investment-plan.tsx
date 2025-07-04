@@ -1,4 +1,4 @@
-import { Progress } from "@/shared/@core/ui/progress";
+import { Progress } from "@/shared/ui/@core/progress";
 
 interface Props {
   name: string;

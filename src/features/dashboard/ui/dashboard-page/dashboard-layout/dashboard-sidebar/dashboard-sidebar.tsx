@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import { TrendingUp, X } from "lucide-react";
 import DashboardSidebarUserProfile from "@/features/dashboard/ui/dashboard-page/dashboard-layout/dashboard-sidebar/dashboard-sidebar-user-profile";
 import DashboardSidebarLinks from "@/features/dashboard/ui/dashboard-page/dashboard-layout/dashboard-sidebar/dashboard-sidebar-links";

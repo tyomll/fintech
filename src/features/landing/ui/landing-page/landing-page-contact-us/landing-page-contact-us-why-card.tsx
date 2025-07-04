@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/shared/@core/ui/card";
+import { Card, CardContent } from "@/shared/ui/@core/card";
 import { FEATURES } from "@/features/landing/lib/constants";
 
 const LandingPageContactUsWhyCard = () => (

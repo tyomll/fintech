@@ -1,4 +1,4 @@
-import { Toaster } from "@/shared/@core/ui/sonner";
+import { Toaster } from "@/shared/ui/@core/sonner";
 import QueryClientProvider from "@/shared/providers/query-client-provider";
 import React from "react";
 

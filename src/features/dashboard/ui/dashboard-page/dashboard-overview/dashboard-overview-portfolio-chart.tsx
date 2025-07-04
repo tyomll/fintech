@@ -4,7 +4,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/shared/@core/ui/card";
+} from "@/shared/ui/@core/card";
 import { XAxis, YAxis, ResponsiveContainer, AreaChart, Area } from "recharts";
 
 const portfolioData = [

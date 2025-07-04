@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { Form, FormProvider, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Card, CardHeader, CardContent } from "@/shared/@core/ui/card";
-import { Button } from "@/shared/@core/ui/button";
+import { Card, CardHeader, CardContent } from "@/shared/ui/@core/card";
+import { Button } from "@/shared/ui/@core/button";
 import { ArrowRight } from "lucide-react";
 import { AUTH_FORM_SCHEMA } from "@/features/auth/lib/schema/form-schema";
 import { useRouter, useSearchParams } from "next/navigation";

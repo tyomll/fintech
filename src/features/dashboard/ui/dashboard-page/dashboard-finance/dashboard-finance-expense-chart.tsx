@@ -5,7 +5,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/shared/@core/ui/card";
+} from "@/shared/ui/@core/card";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 const expenseData = [

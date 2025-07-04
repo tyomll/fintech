@@ -1,4 +1,4 @@
-import { CardHeader, CardTitle } from "@/shared/@core/ui/card";
+import { CardHeader, CardTitle } from "@/shared/ui/@core/card";
 import type { FC } from "react";
 import { PricingPlan } from "@/features/landing/lib/types";
 

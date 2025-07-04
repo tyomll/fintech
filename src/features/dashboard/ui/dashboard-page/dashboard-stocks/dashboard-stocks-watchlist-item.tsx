@@ -1,4 +1,4 @@
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import { Star } from "lucide-react";
 
 interface Props {

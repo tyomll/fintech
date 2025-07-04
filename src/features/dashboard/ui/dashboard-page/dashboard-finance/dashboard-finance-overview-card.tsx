@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/shared/@core/ui/card";
+import { Card, CardContent } from "@/shared/ui/@core/card";
 import { TrendingUp, TrendingDown } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { StockTrend } from "@/features/landing/lib/types";

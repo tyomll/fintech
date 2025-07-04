@@ -6,7 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/shared/@core/ui/card";
+} from "@/shared/ui/@core/card";
 
 const recentActivity = [
   {

@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent } from "@/shared/@core/ui/card";
+import { Card, CardHeader, CardContent } from "@/shared/ui/@core/card";
 import LandingPageTrendingStockCardHeader from "@/features/landing/ui/landing-page/landing-page-trending-stocks/landing-page-trending-stock-card-header";
 import LandingPageTrendingStockCardChart from "@/features/landing/ui/landing-page/landing-page-trending-stocks/landing-page-trending-stock-card-chart";
 import type { FC } from "react";

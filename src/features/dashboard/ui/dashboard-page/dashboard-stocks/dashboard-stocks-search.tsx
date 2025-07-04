@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@/shared/@core/ui/card";
-import { Input } from "@/shared/@core/ui/input";
+import { Card, CardContent } from "@/shared/ui/@core/card";
+import { Input } from "@/shared/ui/@core/input";
 import { Search } from "lucide-react";
 
 interface Props {

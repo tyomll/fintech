@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/shared/@core/ui/avatar";
-import { Button } from "@/shared/@core/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/@core/avatar";
+import { Button } from "@/shared/ui/@core/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,7 +7,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/shared/@core/ui/dropdown-menu";
+} from "@/shared/ui/@core/dropdown-menu";
 import { CreditCard, LogOut, Settings, User } from "lucide-react";
 
 const DashboardSidebarUserProfile = () => {

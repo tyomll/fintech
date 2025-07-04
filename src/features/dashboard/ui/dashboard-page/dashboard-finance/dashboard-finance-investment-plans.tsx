@@ -4,8 +4,8 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/shared/@core/ui/card";
-import { Button } from "@/shared/@core/ui/button";
+} from "@/shared/ui/@core/card";
+import { Button } from "@/shared/ui/@core/button";
 import { Target } from "lucide-react";
 
 const investmentPlans = [

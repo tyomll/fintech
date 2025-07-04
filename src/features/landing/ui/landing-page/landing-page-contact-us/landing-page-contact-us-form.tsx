@@ -3,10 +3,10 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-} from "@/shared/@core/ui/card";
-import { Input } from "@/shared/@core/ui/input";
-import { Textarea } from "@/shared/@core/ui/textarea";
-import { Button } from "@/shared/@core/ui/button";
+} from "@/shared/ui/@core/card";
+import { Input } from "@/shared/ui/@core/input";
+import { Textarea } from "@/shared/ui/@core/textarea";
+import { Button } from "@/shared/ui/@core/button";
 import { Send } from "lucide-react";
 import { Controller, Form, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";

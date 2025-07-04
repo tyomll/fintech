@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import { Search, Bell, Menu } from "lucide-react";
 
 interface Props {
