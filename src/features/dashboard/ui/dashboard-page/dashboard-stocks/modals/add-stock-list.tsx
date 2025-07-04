@@ -1,5 +1,5 @@
 import AddStockListItem from "@/features/dashboard/ui/dashboard-page/dashboard-stocks/modals/add-stock-list-item";
-import { Stock } from "@/features/dashboard/ui/dashboard-page/dashboard-stocks/modals/types";
+import { Stock } from "@/features/dashboard/lib/types";
 
 interface Props {
   stocks: Stock[];

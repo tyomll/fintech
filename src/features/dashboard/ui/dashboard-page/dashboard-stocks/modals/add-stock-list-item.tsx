@@ -1,4 +1,5 @@
-import { Stock, StockTrend } from "./types";
+import { Stock } from "@/features/dashboard/lib/types";
+import { StockTrend } from "@/features/landing/lib/types";
 import { Button } from "@/shared/ui/@core/button";
 import { Plus, TrendingUp, TrendingDown } from "lucide-react";
 

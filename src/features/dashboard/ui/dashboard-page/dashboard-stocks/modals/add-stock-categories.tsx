@@ -1,4 +1,4 @@
-import { Category } from "./types";
+import { Category } from "@/features/dashboard/lib/types";
 import { AddStockBadge } from "@/features/dashboard/ui/dashboard-page/dashboard-stocks/modals";
 
 interface Props {

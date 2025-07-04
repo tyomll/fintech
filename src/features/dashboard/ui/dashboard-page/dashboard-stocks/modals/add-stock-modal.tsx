@@ -7,12 +7,8 @@ import {
   AddStockSelectedList,
   AddStockActions,
 } from "@/features/dashboard/ui/dashboard-page/dashboard-stocks/modals";
-import {
-  Category,
-  CategoryName,
-  Stock,
-  StockTrend,
-} from "@/features/dashboard/ui/dashboard-page/dashboard-stocks/modals/types";
+import { Category, CategoryName, Stock } from "@/features/dashboard/lib/types";
+import { StockTrend } from "@/features/landing/lib/types";
 
 const categories: Category[] = [
   { name: CategoryName.Technology, color: "bg-blue-500/20 text-blue-400" },
