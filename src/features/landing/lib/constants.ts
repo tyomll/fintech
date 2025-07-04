@@ -1,4 +1,14 @@
-import { Crown, MapPin, Mail, Phone, Star, Zap } from "lucide-react";
+import {
+  Crown,
+  MapPin,
+  Mail,
+  Phone,
+  Star,
+  Zap,
+  Github,
+  Twitter,
+  Linkedin,
+} from "lucide-react";
 
 export const PRICING_PLANS = [
   {
@@ -90,4 +100,17 @@ export const CONTACT_ITEMS = [
     content: "Currently at the VTC!!",
     gradient: "from-green-500 to-emerald-500",
   },
+];
+
+export const SOCIAL_LINKS = [
+  { icon: Twitter, href: "#", color: "hover:text-blue-400" },
+  { icon: Linkedin, href: "#", color: "hover:text-blue-600" },
+  { icon: Github, href: "#", color: "hover:text-slate-300" },
+  { icon: Mail, href: "#", color: "hover:text-green-400" },
+];
+
+export const PRODUCT_LINKS = [
+  { label: "Features", href: "#features" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "API", href: "/docs/api" },
 ];

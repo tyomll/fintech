@@ -2,6 +2,7 @@ import LandingPageHero from "@/features/landing/ui/landing-page/landing-page-her
 import LandingPageTrendingStocks from "@/features/landing/ui/landing-page/landing-page-trending-stocks/landing-page-trending-stocks";
 import LandingPagePricingPlans from "@/features/landing/ui/landing-page/landing-page-pricing-plans/landing-page-pricing-plans";
 import LandingPageContactUs from "@/features/landing/ui/landing-page/landing-page-contact-us/landing-page-contact-us";
+import LandingPageFooter from "@/features/landing/ui/landing-page/landing-page-footer/landing-page-footer";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <LandingPageTrendingStocks />
       <LandingPagePricingPlans />
       <LandingPageContactUs />
+      <LandingPageFooter />
     </div>
   );
 };
