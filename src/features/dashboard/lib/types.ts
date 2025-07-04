@@ -9,6 +9,7 @@ export enum TransactionType {
   Income = "Income",
   Expense = "Expense",
 }
+
 export enum CategoryName {
   Technology = "Technology",
   Finance = "Finance",
@@ -31,4 +32,27 @@ export interface Stock {
   price: string;
   change: string;
   trend: StockTrend;
+}
+
+export enum InvestmentType {
+  Stocks = "stocks",
+  Bonds = "bonds",
+  ETF = "etf",
+  Crypto = "crypto",
+}
+
+export enum RiskLevel {
+  Low = "low",
+  Medium = "medium",
+  High = "high",
+}
+
+export interface NewInvestmentFormData {
+  name: string;
+  type: InvestmentType | "";
+  amount: string;
+  targetAmount: string;
+  timeframe: string;
+  riskLevel: RiskLevel | "";
+  description: string;
 }
