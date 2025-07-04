@@ -33,7 +33,7 @@ const DashboardStocksTrendingCard = ({
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
               <span className="text-white font-bold text-sm">{symbol}</span>
             </div>
             <div>
