@@ -2,10 +2,10 @@ import LandingPageHeader from "@/features/landing/ui/landing-page/landing-page-h
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
+    <div>
       <LandingPageHeader />
       {children}
-    </>
+    </div>
   );
 };
 
