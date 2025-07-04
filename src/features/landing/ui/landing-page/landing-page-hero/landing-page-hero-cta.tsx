@@ -5,7 +5,7 @@ const LandingPageHeroCTA = () => (
   <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
     <Button
       size="lg"
-      className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
+      className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-base rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
       tabIndex={0}
       aria-label="Start Your Journey"
     >
