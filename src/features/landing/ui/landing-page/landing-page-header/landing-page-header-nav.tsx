@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const navItems = ["Features", "Pricing", "About", "Contact"];
+const navItems = ["Trending Stocks", "Pricing", "Contact Us"];
 
 const LandingPageHeaderNav = () => (
   <nav
@@ -10,7 +10,7 @@ const LandingPageHeaderNav = () => (
     {navItems.map((item) => (
       <Link
         key={item}
-        href={`#${item.toLowerCase()}`}
+        href={`#${item.replace(" ", "-").toLowerCase()}`}
         className="relative text-slate-300 hover:text-white transition-all duration-300 group"
         tabIndex={0}
         aria-label={item}

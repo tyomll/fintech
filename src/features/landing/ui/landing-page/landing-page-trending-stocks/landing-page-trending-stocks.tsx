@@ -58,7 +58,10 @@ const stockData: Stock[] = [
 
 const LandingPageTrendingStocks = () => {
   return (
-    <section className="py-32 px-4 sm:px-6 lg:px-8 relative">
+    <section
+      id="trending-stocks"
+      className="py-32 px-4 sm:px-6 lg:px-8 relative"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950/50 to-slate-900/50"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
