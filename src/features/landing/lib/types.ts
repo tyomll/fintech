@@ -26,3 +26,10 @@ export type PricingPlan = {
   gradient: string;
   buttonStyle: string;
 };
+
+export type ContactUsForm = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};

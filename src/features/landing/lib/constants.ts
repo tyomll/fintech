@@ -1,4 +1,4 @@
-import { Crown, Star, Zap } from "lucide-react";
+import { Crown, MapPin, Mail, Phone, Star, Zap } from "lucide-react";
 
 export const PRICING_PLANS = [
   {
@@ -60,5 +60,34 @@ export const PRICING_PLANS = [
     gradient: "from-purple-600 to-pink-600",
     buttonStyle:
       "bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700",
+  },
+];
+
+export const FEATURES = [
+  "99.9% Uptime",
+  "24/7 Support",
+  "AI-Powered",
+  "50K+ Users",
+  "Real-time Data",
+];
+
+export const CONTACT_ITEMS = [
+  {
+    icon: Mail,
+    title: "Email",
+    content: "hello@financeai.com",
+    gradient: "from-blue-500 to-cyan-500",
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    content: "+374 (91) 91 91 91",
+    gradient: "from-purple-500 to-pink-500",
+  },
+  {
+    icon: MapPin,
+    title: "Address",
+    content: "Currently at the VTC!!",
+    gradient: "from-green-500 to-emerald-500",
   },
 ];
