@@ -8,6 +8,7 @@ import {
 import { FC } from "react";
 import { EyeIcon, SearchIcon, StarIcon } from "lucide-react";
 import { SearchStock } from "@/shared/lib/types";
+import Link from "next/link";
 
 interface Props {
   searchResults: SearchStock[];
@@ -108,15 +109,17 @@ const DashboardStocksSearchResults: FC<Props> = ({
                 >
                   <StarIcon className="h-4 w-4" aria-hidden="true" />
                 </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-slate-700/50 text-slate-300 hover:bg-slate-800/50 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent"
-                  aria-label="View stock"
-                >
-                  <EyeIcon className="h-4 w-4 mr-1" aria-hidden="true" />
-                  View
-                </Button>
+                <Link href={`/dashboard/stocks/${result.symbol}`}>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-slate-700/50 text-slate-300 hover:bg-slate-800/50 opacity-0 group-hover:opacity-100 transition-opacity bg-transparent"
+                    aria-label="View stock"
+                  >
+                    <EyeIcon className="h-4 w-4 mr-1" aria-hidden="true" />
+                    View
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

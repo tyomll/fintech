@@ -1,5 +1,6 @@
 import { Button } from "@/shared/ui/@core/button";
 import { Star } from "lucide-react";
+import Link from "next/link";
 
 interface Props {
   symbol: string;
@@ -15,7 +16,10 @@ const DashboardStocksWatchlistItem = ({
   change,
 }: Props) => {
   return (
-    <div className="flex items-center justify-between p-4 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors">
+    <Link
+      href={`/dashboard/stocks/${symbol}`}
+      className="flex items-center justify-between p-4 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors"
+    >
       <div className="flex items-center space-x-4">
         <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
           <span className="text-white font-bold text-sm">{symbol}</span>
@@ -38,7 +42,7 @@ const DashboardStocksWatchlistItem = ({
           <Star className="h-4 w-4" />
         </Button>
       </div>
-    </div>
+    </Link>
   );
 };
 
