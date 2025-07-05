@@ -16,7 +16,8 @@ import useMe from "@/features/dashboard/model/api/queries/use-me";
 
 const DashboardSidebarUserProfile = () => {
   const router = useRouter();
-  const { data: me } = useMe();
+  const { data } = useMe();
+  const me = data?.user;
 
   const onLogout = () => {
     CookieService.remove(ACCESS_TOKEN_COOKIE_NAME);
