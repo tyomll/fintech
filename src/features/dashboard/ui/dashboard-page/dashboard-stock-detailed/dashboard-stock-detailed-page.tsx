@@ -5,9 +5,7 @@ import DashboardStockDetailedHeader from "./dashboard-stock-detailed-header";
 import DashboardStockPriceOverview from "./dashboard-stock-price-overview";
 import DashboardStockChart from "./dashboard-stock-chart";
 import DashboardStockAIPrediction from "./dashboard-stock-ai-prediction";
-import DashboardStockCompanyOverview from "./dashboard-stock-company-overview";
 import { useDashboardStore } from "@/features/dashboard/model/store/use-dashboard-store";
-import { Loader2 } from "lucide-react";
 import { Skeleton } from "@/shared/ui/@core/skeleton";
 
 interface Props {
@@ -49,8 +47,6 @@ const DashboardStockDetailedPage: FC<Props> = ({ symbol }) => {
       </div>
 
       <DashboardStockAIPrediction symbol={symbol} />
-
-      <DashboardStockCompanyOverview stock={stock} />
     </div>
   );
 };

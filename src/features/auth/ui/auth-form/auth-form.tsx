@@ -22,7 +22,6 @@ import useLogin from "@/features/auth/model/api/mutations/use-login";
 import useRegister from "@/features/auth/model/api/mutations/use-register";
 import CookieService from "@/shared/services/cookie.service";
 import { ACCESS_TOKEN_COOKIE_NAME } from "@/shared/lib/app";
-import { unknown } from "zod";
 
 const AuthForm = () => {
   const router = useRouter();
