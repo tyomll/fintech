@@ -1,3 +1,5 @@
+import { ACCESS_TOKEN_COOKIE_NAME } from "@/shared/lib/app";
+import CookieService from "@/shared/services/cookie.service";
 import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/@core/avatar";
 import { Button } from "@/shared/ui/@core/button";
 import {
@@ -9,8 +11,18 @@ import {
   DropdownMenuTrigger,
 } from "@/shared/ui/@core/dropdown-menu";
 import { CreditCard, LogOut, Settings, User } from "lucide-react";
+import { useRouter } from "next/navigation";
+import useMe from "@/features/dashboard/model/api/queries/use-me";
 
 const DashboardSidebarUserProfile = () => {
+  const router = useRouter();
+  const { data: me } = useMe();
+
+  const onLogout = () => {
+    CookieService.remove(ACCESS_TOKEN_COOKIE_NAME);
+    router.push("/");
+  };
+
   return (
     <div className="p-4 border-t border-slate-800/50">
       <DropdownMenu>
@@ -25,12 +37,12 @@ const DashboardSidebarUserProfile = () => {
                 alt="User"
               />
               <AvatarFallback className="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-                JD
+                {me?.name?.charAt(0)}
               </AvatarFallback>
             </Avatar>
             <div className="flex-1 text-left">
-              <p className="text-sm font-medium text-white">John Doe</p>
-              <p className="text-xs text-slate-400">john@example.com</p>
+              <p className="text-sm font-medium text-white">{me?.name}</p>
+              <p className="text-xs text-slate-400">{me?.email}</p>
             </div>
           </Button>
         </DropdownMenuTrigger>
@@ -55,7 +67,10 @@ const DashboardSidebarUserProfile = () => {
             Settings
           </DropdownMenuItem>
           <DropdownMenuSeparator className="bg-slate-800/50" />
-          <DropdownMenuItem className="text-red-400 hover:bg-red-500/10 hover:text-red-300">
+          <DropdownMenuItem
+            className="text-red-400 hover:bg-red-500/10 hover:text-red-300"
+            onClick={onLogout}
+          >
             <LogOut className="mr-2 h-4 w-4" />
             Log out
           </DropdownMenuItem>

@@ -4,7 +4,7 @@ import { TrendingUp, TrendingDown } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { StockTrend } from "@/features/landing/lib/types";
 
-interface StockData {
+interface StockChartPoint {
   time: string;
   value: number;
 }
@@ -16,7 +16,7 @@ interface Props {
   change: string;
   changeValue: string;
   trend: StockTrend;
-  data: StockData[];
+  data: StockChartPoint[];
 }
 
 const DashboardStocksTrendingCard = ({
