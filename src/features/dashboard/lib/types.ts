@@ -6,8 +6,8 @@ export enum Activity {
 }
 
 export enum TransactionType {
-  Income = "Income",
-  Expense = "Expense",
+  Income = "income",
+  Expense = "expense",
 }
 
 export enum CategoryName {
@@ -65,6 +65,7 @@ export interface Transaction {
   description: string;
   date: string;
   notes?: string;
+  currency: string;
 }
 
 export type TransactionList = Transaction[];
@@ -76,4 +77,5 @@ export interface CreateTransactionInput {
   description: string;
   date: string;
   notes?: string;
+  currency: string;
 }

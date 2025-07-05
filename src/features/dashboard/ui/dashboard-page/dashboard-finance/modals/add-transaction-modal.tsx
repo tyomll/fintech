@@ -74,6 +74,7 @@ const AddTransactionModal = ({ open, onOpenChange }: Props) => {
       description: formData.description,
       date: formData.date,
       notes: formData.notes,
+      currency: "USD",
     };
     createTransaction(data, {
       onSuccess: () => {
