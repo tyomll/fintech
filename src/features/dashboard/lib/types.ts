@@ -56,3 +56,4 @@ export interface NewInvestmentFormData {
   riskLevel: RiskLevel | "";
   description: string;
 }
+
