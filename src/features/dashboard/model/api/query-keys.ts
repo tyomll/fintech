@@ -4,4 +4,5 @@ export enum DashboardQueryKeys {
   SearchStocks = "dashboard-search-stocks",
   Stock = "stock",
   StockPrediction = "stock-prediction",
+  Transactions = "dashboard-transactions",
 }

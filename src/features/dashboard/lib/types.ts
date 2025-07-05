@@ -57,3 +57,23 @@ export interface NewInvestmentFormData {
   description: string;
 }
 
+export interface Transaction {
+  id: string;
+  type: TransactionType;
+  amount: number;
+  category: string;
+  description: string;
+  date: string;
+  notes?: string;
+}
+
+export type TransactionList = Transaction[];
+
+export interface CreateTransactionInput {
+  type: TransactionType;
+  amount: number;
+  category: string;
+  description: string;
+  date: string;
+  notes?: string;
+}

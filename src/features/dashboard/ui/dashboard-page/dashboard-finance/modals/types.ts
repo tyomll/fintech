@@ -1,6 +1,6 @@
 export enum TransactionType {
-  Income = "income",
-  Expense = "expense",
+  Income = "Income",
+  Expense = "Expense",
 }
 
 export type TransactionCategory = string;

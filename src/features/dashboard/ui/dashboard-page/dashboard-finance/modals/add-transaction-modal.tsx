@@ -12,6 +12,8 @@ import {
   TransactionType,
   AddTransactionFormData,
 } from "@/features/dashboard/ui/dashboard-page/dashboard-finance/modals/types";
+import { useCreateTransaction } from "@/features/dashboard/model/api/queries/use-create-transaction";
+import { CreateTransactionInput } from "@/features/dashboard/lib/types";
 
 interface Props {
   open: boolean;
@@ -52,6 +54,8 @@ const AddTransactionModal = ({ open, onOpenChange }: Props) => {
     notes: "",
   });
 
+  const { mutate: createTransaction, isPending } = useCreateTransaction();
+
   const handleTabChange = (tab: TransactionType) => setActiveTab(tab);
 
   const handleInputChange = (
@@ -63,13 +67,25 @@ const AddTransactionModal = ({ open, onOpenChange }: Props) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onOpenChange(false);
-    setFormData({
-      amount: "",
-      category: "",
-      description: "",
-      date: new Date().toISOString().split("T")[0],
-      notes: "",
+    const data: CreateTransactionInput = {
+      type: activeTab,
+      amount: Number(formData.amount),
+      category: formData.category,
+      description: formData.description,
+      date: formData.date,
+      notes: formData.notes,
+    };
+    createTransaction(data, {
+      onSuccess: () => {
+        onOpenChange(false);
+        setFormData({
+          amount: "",
+          category: "",
+          description: "",
+          date: new Date().toISOString().split("T")[0],
+          notes: "",
+        });
+      },
     });
   };
 
@@ -96,6 +112,7 @@ const AddTransactionModal = ({ open, onOpenChange }: Props) => {
             onCancel={() => onOpenChange(false)}
             activeTab={activeTab}
             disabled={
+              isPending ||
               !formData.amount ||
               !formData.category ||
               !formData.description ||

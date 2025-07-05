@@ -4,4 +4,5 @@ export enum DashboardRoutes {
   SearchStocks = "stock/search",
   Stock = "stock",
   StockPrediction = "stock/prediction",
+  Transactions = "transactions",
 }
