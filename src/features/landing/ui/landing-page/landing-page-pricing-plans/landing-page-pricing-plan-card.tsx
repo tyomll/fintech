@@ -1,8 +1,8 @@
-import { Card, CardContent } from "@/shared/@core/ui/card";
+import { Card, CardContent } from "@/shared/ui/@core/card";
 import LandingPagePricingPlanCardHeader from "./landing-page-pricing-plan-card-header";
 import LandingPagePricingPlanCardFeatures from "./landing-page-pricing-plan-card-features";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import type { FC } from "react";
 import { PricingPlan } from "@/features/landing/lib/types";
 

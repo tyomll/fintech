@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import { ArrowUp } from "lucide-react";
 import type { FC } from "react";
 

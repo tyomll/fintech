@@ -1,4 +1,4 @@
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import { ArrowRight, Play } from "lucide-react";
 
 const LandingPageHeroCTA = () => (

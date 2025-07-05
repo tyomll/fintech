@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { Form, FormProvider, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Card, CardHeader, CardContent } from "@/shared/@core/ui/card";
-import { Button } from "@/shared/@core/ui/button";
+import { Card, CardHeader, CardContent } from "@/shared/ui/@core/card";
+import { Button } from "@/shared/ui/@core/button";
 import { ArrowRight } from "lucide-react";
 import { AUTH_FORM_SCHEMA } from "@/features/auth/lib/schema/form-schema";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -22,7 +22,6 @@ import useLogin from "@/features/auth/model/api/mutations/use-login";
 import useRegister from "@/features/auth/model/api/mutations/use-register";
 import CookieService from "@/shared/services/cookie.service";
 import { ACCESS_TOKEN_COOKIE_NAME } from "@/shared/lib/app";
-import { unknown } from "zod";
 
 const AuthForm = () => {
   const router = useRouter();

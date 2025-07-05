@@ -1,6 +1,6 @@
 import { Controller, useFormContext } from "react-hook-form";
-import { Input } from "@/shared/@core/ui/input";
-import { Label } from "@/shared/@core/ui/label";
+import { Input } from "@/shared/ui/@core/input";
+import { Label } from "@/shared/ui/@core/label";
 import { Mail, Lock, User, Eye, EyeOff } from "lucide-react";
 import type { FC } from "react";
 import { AuthTab, IAuthForm } from "@/features/auth/lib/types";

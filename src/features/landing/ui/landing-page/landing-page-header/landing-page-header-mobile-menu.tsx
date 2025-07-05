@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 import type { FC } from "react";
 
 const navItems = ["Features", "Pricing", "About", "Contact"];

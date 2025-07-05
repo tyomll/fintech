@@ -1,4 +1,4 @@
-import { Button } from "@/shared/@core/ui/button";
+import { Button } from "@/shared/ui/@core/button";
 
 const LandingPageFooterNewsletter = () => (
   <div className="border-t border-slate-800/50 mt-16 pt-12">
