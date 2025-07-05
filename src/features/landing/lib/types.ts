@@ -1,6 +1,6 @@
 export enum StockTrend {
-  Up = "up",
-  Down = "down",
+  Up = "UP",
+  Down = "DOWN",
 }
 
 export type DataPoint = { time: string; value: number };
